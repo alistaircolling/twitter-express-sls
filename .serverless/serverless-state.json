@@ -160,7 +160,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/sample-app/dev/1601747502051-2020-10-03T17:51:42.051Z/sample-app.zip"
+                "S3Key": "serverless/sample-app/dev/1601837932659-2020-10-04T18:58:52.659Z/sample-app.zip"
               },
               "FunctionName": "sample-app-dev-app",
               "Handler": "app/app.handler",
@@ -178,14 +178,14 @@
               "AppLogGroup"
             ]
           },
-          "AppLambdaVersion1ixH4GnPQ137hKUBvUevsF9kQnupIeC3qUfLn9moE": {
+          "AppLambdaVersion92huvJBh9ud7IbUM9akIlg9RPnWi4yPtnkfWqFbM3A": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AppLambdaFunction"
               },
-              "CodeSha256": "mmNWXvi5phGqpDGiR1IRF/Kpyx4s+hRe2YbTPLAWen8="
+              "CodeSha256": "/XT3EYAuk7BMUza8i2EbG+mtUjIEKJEBkxRJ0A3olE4="
             }
           },
           "ApiGatewayRestApi": {
@@ -397,7 +397,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1601747499670": {
+          "ApiGatewayDeployment1601837929095": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -459,7 +459,7 @@
           "AppLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AppLambdaVersion1ixH4GnPQ137hKUBvUevsF9kQnupIeC3qUfLn9moE"
+              "Ref": "AppLambdaVersion92huvJBh9ud7IbUM9akIlg9RPnWi4yPtnkfWqFbM3A"
             }
           },
           "ServiceEndpoint": {
@@ -620,7 +620,7 @@
         "timeout": 6,
         "runtime": "nodejs12.x",
         "vpc": {},
-        "versionLogicalId": "AppLambdaVersion1ixH4GnPQ137hKUBvUevsF9kQnupIeC3qUfLn9moE"
+        "versionLogicalId": "AppLambdaVersion92huvJBh9ud7IbUM9akIlg9RPnWi4yPtnkfWqFbM3A"
       }
     },
     "configValidationMode": "warn",
@@ -643,7 +643,7 @@
     "artifact": "/Users/alistair/Development/sample-app/.serverless/sample-app.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/sample-app/dev/1601747502051-2020-10-03T17:51:42.051Z",
+    "artifactDirectoryName": "serverless/sample-app/dev/1601837932659-2020-10-04T18:58:52.659Z",
     "artifact": "sample-app.zip"
   }
 }
